@@ -1,0 +1,2 @@
+def uniqueMorseRepresentations(words):
+    return len(set((map(lambda L: ''.join(L), map(lambda L: map(lambda x: [".-", "-...", "-.-.", "-..", ".","..-.", "--.", "....", "..", ".---","-.-", ".-..", "--", "-.", "---",".--.", "--.-", ".-.", "...", "-","..-", "...-", ".--", "-..-", "-.--","--.."][ord(x) - ord('a')], L), map(lambda s: list(s), words))))))
