@@ -8,5 +8,4 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution: 
-    def rangeSumBST(self, root, L, R): return 0 if root == None else int(L <= root.val <= R) * root.val + self.rangeSumBST(root.left, L, R) + self.rangeSumBST(root.right, L, R)
+def rangeSumBST(root, L, R): return 0 if root == None else int(L <= root.val <= R) * root.val + rangeSumBST(root.left, L, R) + rangeSumBST(root.right, L, R)
