@@ -1,5 +1,12 @@
-A meme repository to help me with coding challenges and practice problems.
+# one-line-code
 
-I'm trying to write as many solutions as possible in only one line in Python.
+## Your go-to meme repo for coding challenges done in one line!
 
+Solutions aren't guaranteed to be the prettiest or the most efficient, but they are in fact a single line.
+
+Objectives:
+1. Keep me fresh with Python.
+2. Literally just solve some of these challenges in one line for extra fun.
+
+## Relevant may-may:
 ![drake meme](https://raw.githubusercontent.com/eyluo/one-line-code/master/assets/drake.jpg)
