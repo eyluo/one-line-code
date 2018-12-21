@@ -8,5 +8,4 @@
 # You can walk back and forth between rooms freely.
 # Return true if and only if you can enter every room.
 
-class Solution(object):
-    def canVisitAllRooms(self, rooms): return ((lambda vstd: vstd if (lambda frontier: [(lambda v: [vstd.add(v)] + [frontier.append(neighbor) if neighbor not in vstd else None for neighbor in rooms[v]])(frontier.pop(0)) if len(frontier) != 0 else None for _ in range(len(rooms)**2)])([0]) else vstd)(set())) == set(range(len(rooms)))
+def canVisitAllRooms(rooms): return ((lambda vstd: vstd if (lambda frontier: [(lambda v: [vstd.add(v)] + [frontier.append(neighbor) if neighbor not in vstd else None for neighbor in rooms[v]])(frontier.pop(0)) if len(frontier) != 0 else None for _ in range(len(rooms)**2)])([0]) else vstd)(set())) == set(range(len(rooms)))

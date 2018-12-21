@@ -5,4 +5,4 @@
 # To invert an image means that each 0 is replaced by 1, and each 1 is replaced 
 # by 0. For example, inverting[0, 1, 1] results in [1, 0, 0].
 
-def flipAndInvertImage(self, A): return list(map(lambda L: list(reversed(list(map(lambda p: int(not(p)), L)))), A))
+def flipAndInvertImage(A): return list(map(lambda L: list(reversed(list(map(lambda p: int(not(p)), L)))), A))
