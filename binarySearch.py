@@ -1,0 +1,1 @@
+def binarySearch(L, lo, hi, x): return False if (lo >= hi) else bool((x == L[(lo + hi) // 2]) + (x > L[(lo + hi) // 2]) * (binarySearch(L, ((lo + hi) // 2) + 1, hi, x)) + (x < L[(lo + hi) // 2]) * (binarySearch(L, lo, ((lo + hi) // 2), x)))
